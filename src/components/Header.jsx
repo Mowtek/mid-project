@@ -95,7 +95,6 @@ function Header({ user, setUser }) {
             type="checkbox"
             className="changeDetailsInput"
             ref={userAdmin}
-            defaultChecked
           />
         </div>
         <button
@@ -103,7 +102,7 @@ function Header({ user, setUser }) {
           onClick={() => {
             setUser({
               name: userName.current.value,
-              admin: userAdmin.current.value === "on" ? true : false,
+              admin: userAdmin.current.checked,
             });
             console.log(user.name);
           }}
