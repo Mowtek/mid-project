@@ -1,0 +1,302 @@
+#categoryContainer {
+  min-height: 90vh;
+  width: 100%;
+  background-color: #273b52;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.categoryHeader {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 4rem;
+  margin: 3rem 0;
+}
+
+#itemsContainer {
+  width: 80%;
+  background-color: white;
+  border-radius: 16px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.categoryItem {
+  width: 25%;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid black;
+  border-bottom: solid 1px black;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.itemImage {
+  width: 90%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.itemName {
+  font-size: 1rem;
+  text-align: center;
+  height: 10%;
+  padding: 0 1rem;
+}
+
+.itemPrice {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.addToCartButton {
+  width: 75%;
+  height: 12%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+  border-radius: 16px;
+  color: white;
+  background-color: #4c9bc0;
+  cursor: pointer;
+  border: 0px;
+}
+
+.addToCartButton:hover {
+  background-color: black;
+  scale: 1.1;
+  transition: 0.2s all ease-in-out;
+}
+
+.removeItemX {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: red;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.goRight {
+  right: 1rem;
+  left: auto;
+  background-color: blue;
+}
+
+.editItem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: auto;
+  display: none;
+}
+
+.editInput {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 3rem;
+  margin: 1rem 0;
+}
+
+.exitEdit {
+  left: auto;
+  right: 1rem;
+}
+
+.editActualInput {
+  width: 80%;
+}
+
+.updateEdit {
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  background-color: #273b52;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.updateEdit:hover {
+  scale: 1.1;
+}
+
+.addItem {
+  position: relative;
+}
+
+.addItemHidden {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addItemButton {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #4c9bc0;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.updateCountDiv {
+  width: 75%;
+  height: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+
+.updateCount {
+  display: flex;
+  justify-content: space-around;
+  height: 60%;
+  width: 100%;
+  align-items: center;
+  font-size: larger;
+}
+
+.changeCount {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.8rem;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+@keyframes wobble {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.itemUpdated {
+  position: absolute;
+  left: 45%;
+  right: 45%;
+  height: 2rem;
+  top: 9rem;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border-radius: 12px;
+  display: none;
+  animation: wobble 1s ease-in-out;
+}
+
+.updateCountButton {
+  height: 40%;
+  font-size: 1rem;
+  width: 85%;
+}
+
+.categoryItem:nth-child(4n) {
+  border-right: 0px solid transparent;
+}
+
+.sortList {
+  margin: 0 0.3rem;
+  border: 0px solid transparent;
+  background-color: #4c9bc0;
+  padding: 0.5rem 0.7rem;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sortButtons {
+  display: flex;
+  position: absolute;
+  top: -4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .sortButtons {
+    flex-direction: column;
+    top: -7rem;
+  }
+  .sortList {
+    margin-bottom: 0.5rem;
+  }
+  .categoryHeader {
+    margin-bottom: 8rem;
+  }
+  .categoryItem {
+    width: 50%;
+  }
+  #itemsContainer {
+    width: 90%;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #itemsContainer {
+    width: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+.shop-container {
+  min-height: 90vh;
+  width: 100%;
+  background-color: #273b52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.shop-container > h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.shop-categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  width: 96%;
+}
+
+.shop-option {
+  height: 15rem;
+  width: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.75rem;
+  font-family: "Poppins", sans-serif;
+  margin: 1rem 0rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.shop-option:hover {
+  transform: scale(1.2);
+  /* #4c9bc0 */
+}
+
+.shop-option > img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.shop-notsure {
+  font-size: 3rem;
+  padding: 1rem 0;
+  max-width: 50rem;
+  text-align: center;
+  min-height: 8rem;
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.shop-notsure:hover {
+  transform: scale(1.2);
+}

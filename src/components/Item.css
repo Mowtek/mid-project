@@ -1,0 +1,131 @@
+#itemPage {
+  width: 100%;
+  background-color: #273b52;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.goBack {
+  position: absolute;
+  top: -3.5rem;
+  left: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #4c9bc0;
+  cursor: pointer;
+  border: 0px;
+}
+
+#itemContainer {
+  background-color: white;
+  width: 80%;
+  display: flex;
+  border-radius: 16px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+  position: relative;
+}
+
+.explainAndImageContainer {
+  display: flex;
+}
+
+.itemNameHeader {
+  font-size: 2rem;
+}
+
+.itemPagePrice {
+  font-size: 1.7rem;
+}
+
+.itemDescription {
+  font-size: 1.2rem;
+}
+
+.explainage {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.explainage > * {
+  margin-top: 1rem;
+}
+
+.itemPageImage {
+  height: 80%;
+  padding: 2rem;
+  width: 50vw;
+}
+
+.imageDiv {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+}
+
+.addToCartItemPage {
+  padding: 1.5rem 3rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  border-radius: 16px;
+  background-color: #4c9bc0;
+  color: white;
+  cursor: pointer;
+}
+
+.addToCartItemPage:hover {
+  background-color: black;
+  scale: 1.1;
+  transition: 0.3s all ease-in-out;
+}
+
+.updateCountDivI {
+  width: 20vw;
+  padding: 1.5rem 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.e {
+  margin: 1rem 0;
+}
+
+.i {
+  padding: 1rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #itemContainer {
+    width: 90%;
+    border-radius: 0;
+  }
+  .explainAndImageContainer {
+    flex-direction: column-reverse;
+  }
+  #itemContainer {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #itemContainer {
+    width: 100%;
+  }
+}
