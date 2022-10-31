@@ -24,7 +24,7 @@ function Home() {
         )}
       </h3>
       <NavLink
-        to="/shop"
+        to="/mid-project/shop"
         id="button"
         onMouseEnter={(e) => {
           e.target.innerHTML = "ONE <span class='stroke'>CLICK</span> AWAY >>";

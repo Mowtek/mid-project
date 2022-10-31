@@ -47,7 +47,7 @@ function Header({ user, setUser }) {
           <div className="x rotateright"></div>
         </button>
         <NavLink
-          to="/"
+          to="/mid-project/"
           className={({ isActive }) =>
             isActive ? "nav-link current" : "nav-link"
           }
@@ -55,7 +55,7 @@ function Header({ user, setUser }) {
           HOME
         </NavLink>
         <NavLink
-          to="/shop"
+          to="/mid-project/shop"
           className={({ isActive }) =>
             isActive ? "nav-link current" : "nav-link"
           }
@@ -63,7 +63,7 @@ function Header({ user, setUser }) {
           SHOP
         </NavLink>
         <NavLink
-          to="/support"
+          to="/mid-project/support"
           className={({ isActive }) =>
             isActive ? "nav-link current" : "nav-link"
           }
@@ -71,7 +71,7 @@ function Header({ user, setUser }) {
           SUPPORT
         </NavLink>
         <NavLink
-          to="/cart"
+          to="/mid-project/cart"
           className={({ isActive }) =>
             isActive ? "cart nav-link current" : "cart nav-link"
           }

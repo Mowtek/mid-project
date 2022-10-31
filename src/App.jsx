@@ -176,9 +176,9 @@ function App() {
     <div>
       <Header user={user} setUser={setUser} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/mid-project/" element={<Home />} />
         <Route
-          path="/shop/:category/:item"
+          path="/mid-project/shop/:category/:item"
           element={
             <Item
               numbify={numbify}
@@ -190,7 +190,7 @@ function App() {
           }
         />
         <Route
-          path="/shop/:category"
+          path="/mid-project/shop/:category"
           element={
             <Category
               itemsList={itemsList}
@@ -206,9 +206,9 @@ function App() {
             />
           }
         />
-        <Route path="/shop" element={<Shop user={user} />} />
+        <Route path="/mid-project/shop" element={<Shop user={user} />} />
         <Route
-          path="/cart"
+          path="/mid-project/cart"
           element={
             <Cart
               cart={cart}
@@ -218,7 +218,7 @@ function App() {
             />
           }
         />
-        <Route path="/support" element={<Support />} />
+        <Route path="/mid-project/support" element={<Support />} />
       </Routes>
     </div>
   );
