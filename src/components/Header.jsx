@@ -23,6 +23,8 @@ function Header({ user, setUser }) {
   const userName = useRef();
   const userAdmin = useRef();
 
+  const some = useRef();
+
   return (
     <header ref={header}>
       <div>
